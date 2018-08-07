@@ -40,7 +40,7 @@ robots.map(function(robot){
 })//.filter(value => Object.keys(value).length !== 0);
 
 var coloredZebraStripes = 
-zebraStripes.map(function(robot){
+zebraStripes.map(function(stripe){
   let results = {};
   if (knownDecepticons.includes(robot.name)) {
     Object.assign(results, robot, {
