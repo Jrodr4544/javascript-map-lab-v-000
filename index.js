@@ -43,7 +43,7 @@ var coloredZebraStripes =
 zebraStripes.map(function(stripe){
   let results = {};
   if (zebraStripes.indexOf(stripe) % 2) {
-    Object.assign(results, robot, {
+    Object.assign(results, stripe, {
        name: robot.name,
        alliance: 'decepticon',
      })
