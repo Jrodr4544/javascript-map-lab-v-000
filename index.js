@@ -42,7 +42,7 @@ robots.map(function(robot){
 var coloredZebraStripes = 
 zebraStripes.map(function(stripe){
   let results = {};
-  if (zebraStripes.indexOf(stripe) ) {
+  if (zebraStripes.indexOf(stripe) % 2) {
     Object.assign(results, robot, {
        name: robot.name,
        alliance: 'decepticon',
