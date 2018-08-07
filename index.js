@@ -48,7 +48,7 @@ zebraStripes.map(function(stripe){
        color: 'black',
      })
   } else { 
-    Object.assign(results, robot, {
+    Object.assign(results, stripe, {
        name: robot.name,
        alliance: 'autobot',
      })
