@@ -35,12 +35,26 @@ robots.map(function(robot){
        name: robot.name,
        alliance: 'autobot',
      })
-}
+  }
   return results
 })//.filter(value => Object.keys(value).length !== 0);
 
 var coloredZebraStripes = 
-
+zebraStripes.map(function(robot){
+  let results = {};
+  if (knownDecepticons.includes(robot.name)) {
+    Object.assign(results, robot, {
+       name: robot.name,
+       alliance: 'decepticon',
+     })
+  } else { 
+    Object.assign(results, robot, {
+       name: robot.name,
+       alliance: 'autobot',
+     })
+  }
+  return results
+})
    const zebraStripes = [
   { width: 9.12, color: null },
   { width: 5.71, color: null },
