@@ -49,8 +49,8 @@ zebraStripes.map(function(stripe){
      })
   } else { 
     Object.assign(results, stripe, {
-       name: robot.name,
-       alliance: 'autobot',
+       width: stripe.width ,
+       alliance: 'white',
      })
   }
   return results
