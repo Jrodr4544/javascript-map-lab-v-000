@@ -50,7 +50,7 @@ zebraStripes.map(function(stripe){
   } else { 
     Object.assign(results, stripe, {
        width: stripe.width ,
-       alliance: 'white',
+       color: 'white',
      })
   }
   return results
