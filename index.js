@@ -34,4 +34,4 @@ robots.map(function(robot){
 null
 }
   return results
-}).filter(value => Object.keys(value).length !== 0);
+})//.filter(value => Object.keys(value).length !== 0);
