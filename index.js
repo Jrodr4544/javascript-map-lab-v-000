@@ -25,16 +25,19 @@ const zebraStripes = [
 var sortedRobots = 
 robots.map(function(robot){
   let results = {};
-  if (!knownDecepticons.includes(robot.name)) {
+  if (knownDecepticons.includes(robot.name)) {
+    Object.assign(results, robot, {
+       name: robot.name,
+       alliance: 'decepticon',
+     })
+  } else { 
     Object.assign(results, robot, {
        name: robot.name,
        alliance: 'autobot',
      })
-  } else {
-null
 }
   return results
-})//.filter(value => Object.keys(value).length !== 0);
+}).filter(value => Object.keys(value).length !== 0);
 
   // 1) Uncovering alliances should have 4 decepticons in the `sortedRobots` array:
 
