@@ -45,7 +45,7 @@ zebraStripes.map(function(stripe){
   if (zebraStripes.indexOf(stripe) % 2) {
     Object.assign(results, stripe, {
        width: stripe.width,
-       color: 'decepticon',
+       color: 'black',
      })
   } else { 
     Object.assign(results, robot, {
