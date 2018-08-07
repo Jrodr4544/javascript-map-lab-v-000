@@ -37,7 +37,7 @@ robots.map(function(robot){
      })
 }
   return results
-}).filter(value => Object.keys(value).length !== 0);
+})//.filter(value => Object.keys(value).length !== 0);
 
   // 1) Uncovering alliances should have 4 decepticons in the `sortedRobots` array:
 
